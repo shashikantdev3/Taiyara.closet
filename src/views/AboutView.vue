@@ -135,7 +135,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 // ✅ Import an artisan image for About page
-import ArtisanImg from '@/assets/img/Chelsea.png' // You can replace with a more suitable image later
+import ArtisanImg from '../assets/img/shoemaker.png' // You can replace with a more suitable image later
 
 gsap.registerPlugin(ScrollTrigger)
 
