@@ -55,12 +55,12 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 
 // ✅ Import product images from /src/assets/img
-import OxfordImg from '@/assets/img/Oxford.png'
-import DerbyImg from '@/assets/img/Derby.png'
-import ChelseaImg from '@/assets/img/Chelsea.png'
-import MonkImg from '@/assets/img/Monk_Strap_shoe.png'
-import LoaferImg from '@/assets/img/loafer.png'
-import SneakerImg from '@/assets/img/Sneaker.png'
+import OxfordImg from '../assets/img/Oxford.png'
+import DerbyImg from '../assets/img/Derby.png'
+import ChelseaImg from '../assets/img/Chelsea.png'
+import MonkImg from '../assets/img/Monk_Strap_shoe.png'
+import LoaferImg from '../assets/img/loafer.png'
+import SneakerImg from '../assets/img/Sneaker.png'
 
 const products = ref([
   {
