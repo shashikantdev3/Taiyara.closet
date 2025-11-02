@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for luxury look and feel */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-inter text-primary bg-background;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-none uppercase text-sm tracking-wider font-medium transition-all duration-300 hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-primary text-primary px-6 py-3 rounded-none uppercase text-sm tracking-wider font-medium transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+  
+  .section-title {
+    @apply font-playfair text-3xl md:text-4xl lg:text-5xl font-medium mb-6;
+  }
+  
+  .luxury-card {
+    @apply bg-white shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .fade-in {
+    @apply opacity-0 transition-opacity duration-700 ease-in;
+  }
+  
+  .fade-in.appear {
+    @apply opacity-100;
+  }
+}
+
+/* Animations */
+.slide-up {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.slide-up.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Product hover effect */
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card img {
+  transition: transform 0.8s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-info {
+  transform: translateY(-5px);
+}
