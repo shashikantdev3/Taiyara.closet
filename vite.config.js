@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Taiyara.closet/', // 👈 Important for GitHub Pages deployment
+  base: '/Taiyara.closet/', // 👈 MUST MATCH your repo name exactly (case-sensitive)
   plugins: [vue()],
   resolve: {
     alias: {
