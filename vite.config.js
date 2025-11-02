@@ -9,6 +9,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-
-  base: '/Taiyara.closet/',
+  // Use relative paths for GitHub Pages + custom domains
+  base: './',
 })
