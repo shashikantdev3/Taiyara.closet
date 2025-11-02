@@ -9,42 +9,42 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-form py-16">
+    <section class="contact-form py-8 sm:py-16">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
           <div class="contact-info">
-            <h2 class="font-playfair text-3xl mb-6">Get in Touch</h2>
-            <p class="mb-8">Our customer service team is available Monday through Friday, 10am to 6pm IST to assist you with any inquiries.</p>
+            <h2 class="font-playfair text-2xl sm:text-3xl mb-4 sm:mb-6">Get in Touch</h2>
+            <p class="mb-6 sm:mb-8 text-sm sm:text-base">Our customer service team is available Monday through Friday, 10am to 6pm IST to assist you with any inquiries.</p>
             
-            <div class="contact-details mb-8">
+            <div class="contact-details mb-6 sm:mb-8">
               <div class="flex items-start mb-4">
-                <v-icon icon="mdi-map-marker" color="primary" class="mr-4 mt-1"></v-icon>
+                <v-icon icon="mdi-map-marker" color="primary" class="mr-3 sm:mr-4 mt-1"></v-icon>
                 <div>
-                  <h3 class="font-medium mb-1">Visit Our Studio</h3>
-                  <p>Taiyara.Closet Flagship Store<br>Sector 18, Noida<br>Delhi-NCR, India</p>
+                  <h3 class="font-medium mb-1 text-base sm:text-lg">Visit Our Studio</h3>
+                  <p class="text-sm sm:text-base">Taiyara.Closet Flagship Store<br>Sector 18, Noida<br>Delhi-NCR, India</p>
                 </div>
               </div>
               
               <div class="flex items-start mb-4">
-                <v-icon icon="mdi-phone" color="primary" class="mr-4 mt-1"></v-icon>
+                <v-icon icon="mdi-phone" color="primary" class="mr-3 sm:mr-4 mt-1"></v-icon>
                 <div>
-                  <h3 class="font-medium mb-1">Call Us</h3>
-                  <p>+91 98765 43210</p>
+                  <h3 class="font-medium mb-1 text-base sm:text-lg">Call Us</h3>
+                  <p class="text-sm sm:text-base">+91 98765 43210</p>
                 </div>
               </div>
               
-              <div class="flex items-start">
-                <v-icon icon="mdi-email" color="primary" class="mr-4 mt-1"></v-icon>
+              <div class="flex items-start mb-4">
+                <v-icon icon="mdi-email" color="primary" class="mr-3 sm:mr-4 mt-1"></v-icon>
                 <div>
-                  <h3 class="font-medium mb-1">Email Us</h3>
-                  <p>info@taiyaracloset.com</p>
+                  <h3 class="font-medium mb-1 text-base sm:text-lg">Email Us</h3>
+                  <p class="text-sm sm:text-base">support@taiyaracloset.com</p>
                 </div>
               </div>
             </div>
             
             <div class="social-links">
-              <h3 class="font-medium mb-4">Follow Us</h3>
-              <div class="flex gap-4">
+              <h3 class="font-medium mb-4 text-base sm:text-lg">Follow Us</h3>
+              <div class="flex gap-3 sm:gap-4">
                 <a href="https://instagram.com" target="_blank" class="social-link">
                   <v-icon icon="mdi-instagram" size="large"></v-icon>
                 </a>
@@ -59,8 +59,8 @@
           </div>
           
           <div class="form-wrapper">
-            <v-card class="pa-6">
-              <h2 class="font-playfair text-2xl mb-6">Send Us a Message</h2>
+            <v-card class="pa-4 sm:pa-6">
+              <h2 class="font-playfair text-2xl sm:text-3xl mb-4 sm:mb-6">Send a Message</h2>
               
               <v-form @submit.prevent="submitForm">
                 <v-text-field
@@ -79,7 +79,8 @@
                     v => !!v || 'Email is required',
                     v => /.+@.+\..+/.test(v) || 'Email must be valid'
                   ]"
-                  class="mb-4"
+                  class="mb-3 sm:mb-4"
+                  density="comfortable"
                 ></v-text-field>
                 
                 <v-textarea
@@ -87,8 +88,9 @@
                   label="Your Message"
                   variant="outlined"
                   :rules="[v => !!v || 'Message is required']"
-                  rows="5"
-                  class="mb-6"
+                  rows="4"
+                  class="mb-4 sm:mb-6"
+                  density="comfortable"
                 ></v-textarea>
                 
                 <v-btn
@@ -97,6 +99,7 @@
                   size="large"
                   block
                   :loading="loading"
+                  class="text-sm sm:text-base"
                 >
                   Send Message
                 </v-btn>

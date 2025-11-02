@@ -64,11 +64,17 @@ const routes = [
       title: 'Measurement Guide - Taiyara.Closet',
       description: 'Learn how to take accurate measurements for your custom footwear.'
     }
+  },
+  // 404 fallback (optional but recommended)
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  // 👇 IMPORTANT: Use the correct base path for GitHub Pages
+  history: createWebHistory('/Taiyara.closet/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -79,7 +85,7 @@ const router = createRouter({
   }
 })
 
-// Update page title based on route meta
+// ✅ Dynamically update page title from meta
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || 'Taiyara.Closet - Luxury Personalized Footwear'
   next()

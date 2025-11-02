@@ -1,35 +1,35 @@
 <template>
   <div class="about-page">
     <!-- Header Section -->
-    <section class="about-header py-16 bg-secondary">
+    <section class="about-header py-8 sm:py-16 bg-secondary">
       <div class="container mx-auto px-4 text-center">
-        <h1 class="font-playfair text-4xl md:text-5xl mb-4">Where Tradition Meets Technology</h1>
-        <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+        <h1 class="font-playfair text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">Where Tradition Meets Technology</h1>
+        <p class="text-gray-700 text-sm sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">
           At Taiyara.Closet, every pair reflects decades of Indian shoemaking artistry combined with digital precision modeling.
         </p>
       </div>
     </section>
 
     <!-- Brand Story Section -->
-    <section class="brand-story py-16">
+    <section class="brand-story py-8 sm:py-16">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div class="story-image">
-            <div class="bg-gray-200 rounded-lg h-96 relative overflow-hidden">
+            <div class="bg-gray-200 rounded-lg h-64 sm:h-96 relative overflow-hidden">
               <!-- ✅ Replace placeholder with actual image -->
               <img :src="ArtisanImg" alt="Artisan Workshop" class="absolute inset-0 w-full h-full object-cover" />
             </div>
           </div>
 
           <div class="story-content">
-            <h2 class="font-playfair text-3xl mb-6">Our Heritage</h2>
-            <p class="mb-4">
+            <h2 class="font-playfair text-2xl sm:text-3xl mb-4 sm:mb-6">Our Heritage</h2>
+            <p class="text-sm sm:text-base mb-3 sm:mb-4">
               Founded in the heart of Delhi-NCR, Taiyara.Closet emerged from a lineage of master shoemakers with over five decades of experience in handcrafting premium footwear. Our founder, inspired by his grandfather's dedication to perfection, sought to preserve this artisanal heritage while embracing modern technology.
             </p>
-            <p class="mb-4">
+            <p class="text-sm sm:text-base mb-3 sm:mb-4">
               Each Taiyara pair represents the culmination of traditional craftsmanship and cutting-edge digital modeling. We believe that true luxury lies in the perfect fit—where comfort meets elegance without compromise.
             </p>
-            <p>
+            <p class="text-sm sm:text-base">
               Our artisans work with the finest materials, sourced ethically from around the world, to create footwear that stands the test of time both in durability and style.
             </p>
           </div>
@@ -38,17 +38,17 @@
     </section>
 
     <!-- Craftsmanship Section -->
-    <section class="craftsmanship py-16 bg-gray-50">
+    <section class="craftsmanship py-8 sm:py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="font-playfair text-3xl text-center mb-12">Our Craftsmanship</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="craft-card text-center">
+        <h2 class="font-playfair text-2xl sm:text-3xl text-center mb-8 sm:mb-12">Our Craftsmanship</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div class="craft-card text-center p-4 sm:p-6">
             <div class="icon-wrapper mb-4 mx-auto">
               <v-icon icon="mdi-hand" size="x-large" color="primary"></v-icon>
             </div>
-            <h3 class="font-playfair text-xl mb-3">Handcrafted Excellence</h3>
-            <p>
+            <h3 class="font-playfair text-lg sm:text-xl mb-2 sm:mb-3">Handcrafted Excellence</h3>
+            <p class="text-sm sm:text-base">
               Every stitch, every cut, and every finish is meticulously executed by our master artisans who have honed their skills over decades.
             </p>
           </div>

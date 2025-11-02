@@ -1,18 +1,18 @@
 <template>
   <div class="home-page">
     <!-- Hero Section -->
-    <section class="hero-section bg-white min-h-[80vh] flex items-center">
+    <section class="hero-section bg-white min-h-[60vh] sm:min-h-[80vh] flex items-center py-8 sm:py-0">
       <div class="container mx-auto px-4">
         <!-- Hero Text -->
-        <div class="text-center mb-16">
-          <h1 class="font-playfair text-4xl md:text-6xl mb-6 leading-tight">
+        <div class="text-center mb-8 sm:mb-16">
+          <h1 class="font-playfair text-3xl sm:text-4xl md:text-6xl mb-4 sm:mb-6 leading-tight">
             Handcrafted Precision. Digital Perfection.
           </h1>
-          <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+          <p class="text-gray-700 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">
             Each Taiyara pair is built by master artisans in Delhi-NCR — guided by your measurements,
             crafted with precision, and tailored for comfort.
           </p>
-          <div class="flex flex-wrap gap-4 justify-center">
+          <div class="flex flex-wrap gap-3 sm:gap-4 justify-center">
             <v-btn color="accent" size="large" to="/customize" class="text-primary font-medium">
               Craft My Fit
             </v-btn>
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-16">
           <div
             v-for="(product, index) in products"
             :key="index"
@@ -31,7 +31,7 @@
             data-aos="fade-up"
             :data-aos-delay="index * 100"
           >
-            <div class="product-image h-64 bg-white relative overflow-hidden">
+            <div class="product-image h-48 sm:h-64 bg-white relative overflow-hidden">
               <!-- ✅ Properly resolved images -->
               <img
                 :src="product.image"
@@ -39,9 +39,9 @@
                 class="w-full h-full object-cover object-center"
               />
             </div>
-            <div class="p-6">
-              <h3 class="font-playfair text-xl mb-2">{{ product.name }}</h3>
-              <p class="text-gray-600 mb-4">{{ product.description }}</p>
+            <div class="p-4 sm:p-6">
+              <h3 class="font-playfair text-lg sm:text-xl mb-1 sm:mb-2">{{ product.name }}</h3>
+              <p class="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">{{ product.description }}</p>
             </div>
           </div>
         </div>
