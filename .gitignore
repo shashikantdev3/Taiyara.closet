@@ -5,7 +5,6 @@
 /dist/
 /build/
 /out/
-/public/
 
 # Local env files
 .env
