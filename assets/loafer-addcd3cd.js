@@ -1,1 +1,0 @@
-const s="/Taiyara.closet/assets/Derby-fd074c36.png",a="/Taiyara.closet/assets/Chelsea-ec3a010c.png",e="/Taiyara.closet/assets/Monk_Strap_shoe-089094ce.png",o="/Taiyara.closet/assets/loafer-7d7d606b.png";export{a as C,s as D,o as L,e as M};
